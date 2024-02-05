@@ -14,7 +14,11 @@ if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
 endif()
 
 qt_add_executable(TetrisApp src/main.cpp
-    gamescreen.h gamescreen.cpp gamescreen.ui)
+    gamescreen.h gamescreen.cpp gamescreen.ui
+    mainmenu.h mainmenu.cpp mainmenu.ui
+    menupause.h menupause.cpp menupause.ui
+
+)
 
 qt_add_resources(TetrisApp "configuration"
     PREFIX "/"
