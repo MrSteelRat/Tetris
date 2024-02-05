@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">qApp-&gt;setStyleSheet(&quot;QLineEdit { background-color: black }&quot;);</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
     <layout class="QGridLayout" name="gridLayout" rowstretch="2,0,0" rowminimumheight="0,0,0">
@@ -28,14 +31,14 @@
            <item>
             <widget class="QPushButton" name="Move_Left_Btn">
              <property name="text">
-              <string>PushButton</string>
+              <string>Left</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QPushButton" name="Move_Right_Btn">
              <property name="text">
-              <string>PushButton</string>
+              <string>Right</string>
              </property>
             </widget>
            </item>
@@ -44,7 +47,7 @@
          <item>
           <widget class="QPushButton" name="Move_Down_Btn">
            <property name="text">
-            <string>PushButton</string>
+            <string>Down</string>
            </property>
           </widget>
          </item>
@@ -53,7 +56,7 @@
        <item>
         <widget class="QPushButton" name="Rotate_Right_Btn">
          <property name="text">
-          <string>PushButton</string>
+          <string>Rotate</string>
          </property>
         </widget>
        </item>

@@ -15,6 +15,9 @@ public:
     explicit GameScreen(QWidget *parent = nullptr);
     ~GameScreen();
 
+private slots:
+    void on_Rotate_Right_Btn_clicked();
+
 private:
     Ui::GameScreen *ui;
 };

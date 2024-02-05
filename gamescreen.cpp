@@ -12,3 +12,9 @@ GameScreen::~GameScreen()
 {
     delete ui;
 }
+
+void GameScreen::on_Rotate_Right_Btn_clicked()
+{
+
+}
+
