@@ -14,7 +14,7 @@ if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
 endif()
 
 # Find SFML package
-find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
+#find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
 qt_add_executable(TetrisApp
     src/main.cpp
