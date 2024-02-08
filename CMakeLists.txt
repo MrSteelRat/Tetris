@@ -13,11 +13,17 @@ if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
     qt_standard_project_setup()
 endif()
 
-qt_add_executable(TetrisApp src/main.cpp
-    gamescreen.h gamescreen.cpp gamescreen.ui
-    mainmenu.h mainmenu.cpp mainmenu.ui
-    menupause.h menupause.cpp menupause.ui
+# Find SFML package
+find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 
+qt_add_executable(TetrisApp
+    src/main.cpp
+    gamescreen.h
+    gamescreen.cpp
+    gamescreen.ui
+    mainmenugame.h
+    mainmenugame.cpp
+    mainmenugame.ui
 )
 
 qt_add_resources(TetrisApp "configuration"
@@ -32,9 +38,9 @@ target_link_libraries(TetrisApp PRIVATE
     Qt6::Qml
     Qt6::Quick
     Qt6::Widgets
-    Qt6::OpenGL     
+    Qt6::OpenGL
     Qt6::OpenGLWidgets
-)
+    )
 
 if (BUILD_QDS_COMPONENTS)
     include(${CMAKE_CURRENT_SOURCE_DIR}/qmlcomponents)
@@ -53,6 +59,6 @@ install(TARGETS TetrisApp
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-# make IDEs aware of the QML import path
+# Make IDEs aware of the QML import path
 set(QML_IMPORT_PATH ${PROJECT_BINARY_DIR}/qml CACHE PATH
     "Path to the custom QML components defined by the project")
