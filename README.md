@@ -18,13 +18,13 @@
 
 ## Controls
 
-- Use the space bar or tap the screen to make the bird flap its wings and ascend.
-- Navigate through obstacles by adjusting the bird's altitude.
-- Avoid crashing into pipes to maintain your score and progress.
+- Use arrow keys to move the Tetriminos (blocks).
+- Press the space bar to rotate the Tetriminos.
+- Complete lines to score points and clear the board.
 
 ## Screenshots
---coming soon
-![Flappy Bird Screenshot](screenshots/flappy_bird_screenshot.png)
+--comming soon
+![Tetris Screenshot](screenshots/tetris_screenshot.png)
 
 ## License
 
@@ -32,8 +32,8 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Acknowledgments
 
-- The game concept is inspired by the original Flappy Bird created by Dong Nguyen.
+- The Tetris game logic is inspired by the original Tetris created by Alexey Pajitnov.
 
 Feel free to contribute, report issues, or suggest improvements!
 
-Happy flying!
+Happy coding!
